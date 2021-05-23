@@ -14,7 +14,7 @@
 
 let exerciseTitle = function (exerciseLetter) {
   
-  let stringOfExerciseLetters = "ABCDEFG"
+  let stringOfExerciseLetters = "ABCDEFG" // a string of exercise letters 
 
   for (i = 0; i < stringOfExerciseLetters.length; i++) {
 
@@ -46,9 +46,17 @@ exerciseTitle("B")
 let sum = 10 + 12
 console.log(sum)
 
+exerciseTitle("C")
+
 /* Ex.C 
     Create a variable called "random" and assign to it a random number between 0 and 20 (it should be randomly created at each execution).
 */
+
+let random = Math.floor(Math.random() * 21) //returns random integers between 0 and 20
+
+console.log(random)
+
+
 
 /* Ex.D
     Create a variable called "me" and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
