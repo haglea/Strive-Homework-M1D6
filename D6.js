@@ -56,11 +56,21 @@ let random = Math.floor(Math.random() * 21) //returns random integers between 0 
 
 console.log(random)
 
-
+exerciseTitle("D")
 
 /* Ex.D
     Create a variable called "me" and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
 */
+
+let me = {
+
+  name: "John",
+  surname: "Doe",
+  age: 22
+
+}
+
+console.log(me)
 
 /* Ex.E 
     Programmatically remove the age property from the previously create object.
