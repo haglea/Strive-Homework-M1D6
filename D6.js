@@ -37,10 +37,14 @@ exerciseTitle("A")
 let test = "Testing string"
 console.log(test)
 
+exerciseTitle("B")
 
 /* Ex.B
     Create a variable called "sum" and assign to it the result of the sum between 10 and 20.
 */
+
+let sum = 10 + 12
+console.log(sum)
 
 /* Ex.C 
     Create a variable called "random" and assign to it a random number between 0 and 20 (it should be randomly created at each execution).
