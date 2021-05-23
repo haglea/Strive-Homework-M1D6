@@ -92,9 +92,15 @@ me.skills = ["HTML", "CSS", "JavaScript"]
 
 console.log(me)
 
+exerciseTitle("G")
+
 /* Ex.G 
    Programmatically remove the last skill from the "skills" array inside the "me" object.
 */
+
+me.skills.pop([2])
+
+console.log(me)
 
 // JS Functions
 /* Ex.1
