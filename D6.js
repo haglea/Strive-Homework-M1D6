@@ -129,11 +129,27 @@ console.log(numberBetween1And6)
 
 dice()
 
+exerciseTitleNumber(2)
+
 /* Ex.2 
     Write a function called "whoIsBigger" which receives 2 numbers as parameters and returns the biggest one.
 */
 
+let whoIsBigger = function (firstNumber, secondNumber) {
 
+if (firstNumber > secondNumber) {
+
+console.log("Number", firstNumber, "is the biggest number")
+
+} else {
+
+  console.log("Number", secondNumber, "is the biggest number")
+
+}
+
+}
+
+whoIsBigger(8, 2)
 
 /* Ex.3
     Write a function called "splitMe" which receives a string as a parameter and returns an array with every word in that string.
