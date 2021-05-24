@@ -176,9 +176,35 @@ let splitMe = function (stringToSplit) {
 
 splitMe("Coding is my utmost passion.")
 
+exerciseTitleNumber(4)
+
 /* Ex.4
     Write a function called "deleteOne" which receives a string and a boolean as parameters. If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
 */
+
+let deleteOne = function (stringFirstOrLast, booleanParameter) {
+
+  if (booleanParameter === true) {
+
+    let stringWithoutFirstLetter = stringFirstOrLast.substr(1)
+
+    console.log(stringWithoutFirstLetter)
+    
+    return stringWithoutFirstLetter
+
+  } else {
+
+      let stringRemoveLastLetter = stringFirstOrLast.substr(0, stringFirstOrLast.length-1)
+
+      console.log(stringRemoveLastLetter)
+
+      return stringRemoveLastLetter
+
+  }
+
+}
+
+deleteOne("First or last one.", false)
 
 /* Ex.5
    Write a function called "onlyLetters" which receives a string as a parameter and returns it removing all the digits.
