@@ -225,14 +225,33 @@ let onlyLetters = function (stringToRemoveDigits) {
 
 onlyLetters("14 dogs and 3 cats")
 
-
+exerciseTitle(6)
 
 /* Ex.6 
    Write a function called "isThisAnEmail" which receives a string as a parameter and returns true if the string is a valid email address.
 */
 
+let isThisAnEmail = function (emailToCheck) {
 
+  let mailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/ // regular expression to check if string is an email address
+  
+  if (emailToCheck.match(mailFormat)) { //matches a string against regular expression
+    
+    console.log(emailToCheck, "is a valid email address")
 
+    return true
+
+  } else {
+
+    console.log(emailToCheck, "is an invalid email address")
+
+    return false
+
+    }
+
+}
+
+isThisAnEmail("asdasda&sd")
 
 exerciseTitle(7)
 
