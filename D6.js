@@ -225,13 +225,35 @@ let onlyLetters = function (stringToRemoveDigits) {
 
 onlyLetters("14 dogs and 3 cats")
 
+
+
 /* Ex.6 
    Write a function called "isThisAnEmail" which receives a string as a parameter and returns true if the string is a valid email address.
 */
 
+
+
+
+exerciseTitle(7)
+
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
 */
+
+
+let whatDayIsIt = function () {
+
+  let date = new Date()
+
+  let dayOfWeek = date.getDay()
+  
+  console.log(dayOfWeek)
+  
+  return dayOfWeek
+
+}
+
+whatDayIsIt()
 
 /* Ex.8
     Write a function called "rollTheDices" which receives a number as a parameter.
