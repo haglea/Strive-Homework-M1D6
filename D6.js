@@ -22,7 +22,7 @@ let exerciseTitle = function (exerciseLetter) {
 
   }
   
-  console.log("\n-------------------->> Exercise", exerciseLetter, "<<--------------------")
+  console.log("\n-------------------->> JS Basics Exercise", exerciseLetter, "<<--------------------")
 
   return exerciseLetter
 
@@ -102,14 +102,38 @@ me.skills.pop([2])
 
 console.log(me)
 
+
+
+let exerciseTitleNumber = function (exerciseNumber) {
+
+  console.log("\n-------------------->> JS Functions Exercise", exerciseNumber, "<<--------------------")
+  
+  return exerciseNumber
+
+}
+
+exerciseTitleNumber(1)
+
 // JS Functions
 /* Ex.1
     Write a function called "dice"; it should randomize an integer number between 1 and 6.
 */
 
+let dice = function (numberBetween1And6) {
+
+numberBetween1And6 = Math.floor(Math.random() *6) + 1 // random number between 1 and 6 both included
+
+console.log(numberBetween1And6)
+
+}
+
+dice()
+
 /* Ex.2 
     Write a function called "whoIsBigger" which receives 2 numbers as parameters and returns the biggest one.
 */
+
+
 
 /* Ex.3
     Write a function called "splitMe" which receives a string as a parameter and returns an array with every word in that string.
