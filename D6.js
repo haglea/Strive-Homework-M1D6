@@ -200,16 +200,30 @@ let deleteOne = function (stringFirstOrLast, booleanParameter) {
 
       return stringRemoveLastLetter
 
-  }
+    }
 
 }
 
 deleteOne("First or last one.", false)
 
+exerciseTitleNumber(5)
+
 /* Ex.5
    Write a function called "onlyLetters" which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs")  => returns "I have  dogs"
 */
+
+let onlyLetters = function (stringToRemoveDigits) {
+
+    let stringWithRemovedDigits = stringToRemoveDigits.replace(/0|1|2|3|4|5|6|7|8|9/g,"") //replace digits (g - to replace all occurrences)
+    
+    console.log(stringWithRemovedDigits)
+    
+    return stringWithRemovedDigits
+
+}
+
+onlyLetters("14 dogs and 3 cats")
 
 /* Ex.6 
    Write a function called "isThisAnEmail" which receives a string as a parameter and returns true if the string is a valid email address.
