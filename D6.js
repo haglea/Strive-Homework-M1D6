@@ -121,9 +121,11 @@ exerciseTitleNumber(1)
 
 let dice = function (numberBetween1And6) {
 
-numberBetween1And6 = Math.floor(Math.random() *6) + 1 // random number between 1 and 6 both included
+  numberBetween1And6 = Math.floor(Math.random() *6) + 1 // random number between 1 and 6 both included
 
-console.log(numberBetween1And6)
+  console.log(numberBetween1And6)
+
+  return numberBetween1And6
 
 }
 
@@ -137,24 +139,42 @@ exerciseTitleNumber(2)
 
 let whoIsBigger = function (firstNumber, secondNumber) {
 
-if (firstNumber > secondNumber) {
+  if (firstNumber > secondNumber) {
 
-console.log("Number", firstNumber, "is the biggest number")
+  console.log("Number", firstNumber, "is the biggest number")
 
-} else {
+  return firstNumber
 
-  console.log("Number", secondNumber, "is the biggest number")
+  } else {
+
+    console.log("Number", secondNumber, "is the biggest number")
+
+    return secondNumber
+
+  }
 
 }
 
-}
+whoIsBigger(2, 6)
 
-whoIsBigger(8, 2)
+exerciseTitleNumber(3)
 
 /* Ex.3
     Write a function called "splitMe" which receives a string as a parameter and returns an array with every word in that string.
     Ex. splitMe("I love coding") => returns ["I", "Love", "Coding"]
 */
+
+let splitMe = function (stringToSplit) {
+
+  let splittedString = stringToSplit.split(" ")
+
+  console.log(splittedString)
+
+  return splittedString
+
+}
+
+splitMe("Coding is my utmost passion.")
 
 /* Ex.4
     Write a function called "deleteOne" which receives a string and a boolean as parameters. If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
