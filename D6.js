@@ -119,9 +119,9 @@ exerciseTitleNumber(1)
     Write a function called "dice"; it should randomize an integer number between 1 and 6.
 */
 
-let dice = function (numberBetween1And6) {
+let dice = function () {
 
-  numberBetween1And6 = Math.floor(Math.random() *6) + 1 // random number between 1 and 6 both included
+  let numberBetween1And6 = Math.floor(Math.random() *6) + 1 // random number between 1 and 6 both included
 
   console.log(numberBetween1And6)
 
@@ -274,6 +274,8 @@ let whatDayIsIt = function () {
 
 whatDayIsIt()
 
+exerciseTitle(8)
+
 /* Ex.8
     Write a function called "rollTheDices" which receives a number as a parameter.
     It should invoke the dice() function defined in Ex1 the specified amount of times,
@@ -284,6 +286,27 @@ whatDayIsIt()
         values: [3, 3, 4]
     }
 */
+
+let rollTheDices = function (howManyTimes) {
+  
+  let dicedSumAndValues = {
+
+    sum: 0,
+    values: []
+
+  }
+
+  for (i = 0; i < howManyTimes; i++) { 
+    let dicedResult = dice()  
+    dicedSumAndValues.sum += dicedResult
+    dicedSumAndValues.values.push(dicedResult)
+  }
+
+  console.log(dicedSumAndValues)
+  return dicedSumAndValues
+}
+
+rollTheDices(5)
 
 /* Ex.9
    Write a function called "howManyDays" which receives a date as a parameter and should return the number of days passed since that date.
