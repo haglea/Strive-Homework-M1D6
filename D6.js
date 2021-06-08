@@ -13,21 +13,14 @@
 //JS Basics
 
 let exerciseTitle = function (exerciseLetter) {
-  
   let stringOfExerciseLetters = "ABCDEFG" // a string of exercise letters 
-
   for (i = 0; i < stringOfExerciseLetters.length; i++) {
-
   let exerciseLetter = stringOfExerciseLetters.length
-
   }
-  
   console.log("\n-------------------->> JS Basics Exercise", exerciseLetter, "<<--------------------")
-
   return exerciseLetter
 
 }
-
 exerciseTitle("A")
 
 /* Ex.A
@@ -52,8 +45,7 @@ exerciseTitle("C")
     Create a variable called "random" and assign to it a random number between 0 and 20 (it should be randomly created at each execution).
 */
 
-let random = Math.floor(Math.random() * 21) //returns random integers between 0 and 20
-
+let random = Math.random() * 20; //returns random number between 0 and 20
 console.log(random)
 
 exerciseTitle("D")
@@ -79,7 +71,6 @@ exerciseTitle("E")
 */
 
 delete me.age
-
 console.log(me)
 
 exerciseTitle("F")
@@ -89,7 +80,6 @@ exerciseTitle("F")
 */
 
 me.skills = ["HTML", "CSS", "JavaScript"]
-
 console.log(me)
 
 exerciseTitle("G")
@@ -98,18 +88,14 @@ exerciseTitle("G")
    Programmatically remove the last skill from the "skills" array inside the "me" object.
 */
 
-me.skills.pop([2])
-
+me.skills.pop("Javascript")
 console.log(me)
 
 
 
 let exerciseTitleNumber = function (exerciseNumber) {
-
   console.log("\n-------------------->> JS Functions Exercise", exerciseNumber, "<<--------------------")
-  
   return exerciseNumber
-
 }
 
 exerciseTitleNumber(1)
@@ -120,15 +106,11 @@ exerciseTitleNumber(1)
 */
 
 let dice = function () {
-
-  let numberBetween1And6 = Math.floor(Math.random() *6) + 1 // random number between 1 and 6 both included
-
-  console.log(numberBetween1And6)
-
+  // random integer between 1 and 6 both included
+  let numberBetween1And6 = Math.floor(Math.random() *6) + 1 
+  console.log("Random integer between 1 and 6:", numberBetween1And6)
   return numberBetween1And6
-
 }
-
 dice()
 
 exerciseTitleNumber(2)
@@ -140,21 +122,14 @@ exerciseTitleNumber(2)
 let whoIsBigger = function (firstNumber, secondNumber) {
 
   if (firstNumber > secondNumber) {
-
   console.log("Number", firstNumber, "is the biggest number")
-
   return firstNumber
-
   } else {
-
     console.log("Number", secondNumber, "is the biggest number")
-
     return secondNumber
-
   }
 
 }
-
 whoIsBigger(2, 6)
 
 exerciseTitleNumber(3)
@@ -165,15 +140,10 @@ exerciseTitleNumber(3)
 */
 
 let splitMe = function (stringToSplit) {
-
   let splittedString = stringToSplit.split(" ")
-
   console.log(splittedString)
-
   return splittedString
-
 }
-
 splitMe("Coding is my utmost passion.")
 
 exerciseTitleNumber(4)
@@ -185,21 +155,13 @@ exerciseTitleNumber(4)
 let deleteOne = function (stringFirstOrLast, booleanParameter) {
 
   if (booleanParameter === true) {
-
     let stringWithoutFirstLetter = stringFirstOrLast.substr(1)
-
     console.log(stringWithoutFirstLetter)
-    
     return stringWithoutFirstLetter
-
   } else {
-
       let stringRemoveLastLetter = stringFirstOrLast.substr(0, stringFirstOrLast.length-1)
-
       console.log(stringRemoveLastLetter)
-
       return stringRemoveLastLetter
-
     }
 
 }
@@ -216,15 +178,11 @@ exerciseTitleNumber(5)
 let onlyLetters = function (stringToRemoveDigits) {
 
     let stringWithRemovedDigits = stringToRemoveDigits.replace(/0|1|2|3|4|5|6|7|8|9/g,"") //replace digits (g - to replace all occurrences)
-    
     console.log(stringWithRemovedDigits)
-    
     return stringWithRemovedDigits
-
 }
 
 onlyLetters("14 dogs and 3 cats")
-
 exerciseTitle(6)
 
 /* Ex.6 
@@ -232,48 +190,32 @@ exerciseTitle(6)
 */
 
 let isThisAnEmail = function (emailToCheck) {
-
   let mailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/ // regular expression to check if string is an email address
-  
-  if (emailToCheck.match(mailFormat)) { //matches a string against regular expression
-    
-    console.log(emailToCheck, "is a valid email address")
-
-    return true
-
+    if (emailToCheck.match(mailFormat)) { //matches a string against regular expression
+                                        //indexOf > 0 is second option
+      console.log(emailToCheck, "is a valid email address")
+      return true
   } else {
-
-    console.log(emailToCheck, "is an invalid email address")
-
-    return false
-
+      console.log(emailToCheck, "is an invalid email address")
+      return false
     }
-
 }
 
 isThisAnEmail("asdasda&sd")
-
 exerciseTitle(7)
 
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
 */
 
-
 let whatDayIsIt = function () {
-
   let date = new Date()
-
   let dayOfWeek = date.getDay()
-  
   console.log(dayOfWeek)
-  
   return dayOfWeek
-
 }
 
 whatDayIsIt()
-
 exerciseTitle(8)
 
 /* Ex.8
@@ -288,29 +230,33 @@ exerciseTitle(8)
 */
 
 let rollTheDices = function (howManyTimes) {
-  
   let dicedSumAndValues = {
-
     sum: 0,
     values: []
-
   }
-
   for (i = 0; i < howManyTimes; i++) { 
     let dicedResult = dice()  
     dicedSumAndValues.sum += dicedResult
     dicedSumAndValues.values.push(dicedResult)
   }
-
   console.log(dicedSumAndValues)
   return dicedSumAndValues
 }
-
 rollTheDices(5)
+
+exerciseTitle(9)
 
 /* Ex.9
    Write a function called "howManyDays" which receives a date as a parameter and should return the number of days passed since that date.
 */
+
+let howManyDays = function (datePassed) {
+let currentDate = new Date()
+let differenceDays = (currentDate.getTime() - datePassed.getTime()) / (1000 * 60 * 60 * 24)
+console.log(differenceDays.toFixed(0))
+return differenceDays.toFixed(0)
+}
+howManyDays(new Date (2020, 3, 1))
 
 /* Ex.10
    Write a function called "isTodayMyBirthday" which should return true if today's your birthday, false otherwise.

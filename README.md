@@ -1,2 +1,2 @@
 # Strive-Homework-M1D6
-Exercises 1 - 23 
+Exercises A - G, 1 - 23 
