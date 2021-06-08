@@ -258,9 +258,23 @@ return differenceDays.toFixed(0)
 }
 howManyDays(new Date (2020, 3, 1))
 
+exerciseTitle(10)
 /* Ex.10
    Write a function called "isTodayMyBirthday" which should return true if today's your birthday, false otherwise.
 */
+
+let isTodayMyBirthday = function () {
+      let myBirthday = new Date(1988, 5, 8)
+      let today = new Date()
+      if (myBirthday.getDate() === today.getDate() && myBirthday.getMonth() === today.getMonth()) {
+        console.log("Today is my birthday:", true)
+        return true
+      } else {
+        console.log("Today is my birthday:", false)
+        return false
+      }
+}
+isTodayMyBirthday()
 
 // JS Arrays // Objs
 // NOTE: movies array is defined at the end of this file!
